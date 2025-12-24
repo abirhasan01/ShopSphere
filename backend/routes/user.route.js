@@ -1,4 +1,5 @@
 const { registerUser, loginUser, adminLogin } = require("../controllers/user.controller")
+const adminAuth = require("../middleware/adminAuth")
 
 const userRouter = require("express").Router()
 

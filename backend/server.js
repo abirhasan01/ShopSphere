@@ -6,6 +6,7 @@ const cors = require("cors");
 const connectDB = require("./config/db");
 const connectCloudinary = require("./config/cloudinary");
 const userRouter = require("./routes/user.route");
+const productRouter = require("./routes/product.route");
 
 // ------------middleware & app config------------
 connectDB()
@@ -21,6 +22,7 @@ app.get("/", (req, res) => {
 })
 
 app.use("/api/user", userRouter)
+app.use("/api/product", productRouter)
 
 
 
