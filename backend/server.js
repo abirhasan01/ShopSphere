@@ -7,6 +7,7 @@ const connectDB = require("./config/db");
 const connectCloudinary = require("./config/cloudinary");
 const userRouter = require("./routes/user.route");
 const productRouter = require("./routes/product.route");
+const cartRouter = require("./routes/cart.route");
 
 // ------------middleware & app config------------
 connectDB()
@@ -23,7 +24,7 @@ app.get("/", (req, res) => {
 
 app.use("/api/user", userRouter)
 app.use("/api/product", productRouter)
-
+app.use("/api/cart", cartRouter)
 
 
 
