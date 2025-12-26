@@ -8,6 +8,7 @@ const connectCloudinary = require("./config/cloudinary");
 const userRouter = require("./routes/user.route");
 const productRouter = require("./routes/product.route");
 const cartRouter = require("./routes/cart.route");
+const orderRouter = require("./routes/order.route");
 
 // ------------middleware & app config------------
 connectDB()
@@ -25,7 +26,7 @@ app.get("/", (req, res) => {
 app.use("/api/user", userRouter)
 app.use("/api/product", productRouter)
 app.use("/api/cart", cartRouter)
-
+app.use("/api/order", orderRouter)
 
 
 app.listen(PORT, ()=> {
