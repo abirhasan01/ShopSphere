@@ -20,7 +20,7 @@ const Orders = () => {
       if(response.data.success){
         let allOrdersItem = []
         response.data.orders.map((order) => {
-          order.items.map((item, index)=> {
+          order.items.map((item)=> {
             item["status"] = order.status
             item["payment"] = order.payment
             item["paymentMethod"] = order.paymentMethod
