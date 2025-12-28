@@ -38,6 +38,7 @@ export const ShopContextProvider = (props) => {
             cartData[itemId][size] = 1
         }
         setCartItems(cartData)
+        toast.success("Product Added")
 
         if(token){
             try {
@@ -51,7 +52,9 @@ export const ShopContextProvider = (props) => {
         }
 
 
+
     }
+
 
     const getCartCount = () => {
         let totalCount = 0;
