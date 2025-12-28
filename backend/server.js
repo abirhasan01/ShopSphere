@@ -20,7 +20,7 @@ app.use(express.urlencoded({extended: true}))
 
 // -----------api endpoints-----------
 app.get("/", (req, res) => {
-    res.send("Hello World")
+    res.send("API Working")
 })
 
 app.use("/api/user", userRouter)

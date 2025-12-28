@@ -4,6 +4,12 @@
 *{
     font-family: Outfit;
 }
+.logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
 select,input,textarea {
     border: 1px solid #c2d2d2;

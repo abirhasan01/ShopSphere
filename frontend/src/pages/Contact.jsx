@@ -11,7 +11,7 @@ const Contact = () => {
 
       <div className="my-10 flex flex-col justify-center md:flex-row gap-10 mb-28">
         <img
-          className="w-full md:max-w-[480px]"
+          className="w-full md:max-w-[480px] rounded-lg"
           src={assets.contact_img}
           alt=""
         />
@@ -31,12 +31,13 @@ const Contact = () => {
           <p className="text-gray-500">
             Learn more about our teams and job openings.
           </p>
-          <button className="border border-black px-8 py-4 text-sm hover:bg-black hover:text-white transition-all duration-500">Explore Jobs</button>
+          <button className="border border-black rounded-full px-8 py-4 text-sm hover:bg-black hover:text-white transition-all duration-500">
+            Explore Jobs
+          </button>
         </div>
       </div>
 
       <NewsLetterBox />
-
     </div>
   );
 }

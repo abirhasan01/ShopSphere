@@ -11,7 +11,7 @@ const About = () => {
 
       <div className="my-10 flex flex-col md:flex-row gap-16">
         <img
-          className="w-full md:max-w-[450px]"
+          className="w-full md:max-w-[450px] rounded-lg"
           src={assets.about_img}
           alt=""
         />
@@ -45,21 +45,21 @@ const About = () => {
       </div>
 
       <div className="flex flex-col md:flex-row text-sm mb-20">
-        <div className="border px10 md:px-16 py-9 sm:py-20 flex flex-col gap-5">
+        <div className="border px-10 md:px-16 py-9 sm:py-20 flex flex-col gap-5">
           <b>Quality Assurance:</b>
           <p className="text-gray-600">
             We meticulously select and vet each product to ensure it meets our
             stringent quality standards.
           </p>
         </div>
-        <div className="border px10 md:px-16 py-9 sm:py-20 flex flex-col gap-5">
+        <div className="border px-10 md:px-16 py-9 sm:py-20 flex flex-col gap-5">
           <b>Convenience:</b>
           <p className="text-gray-600">
             With our user-friendly interface and hassle-free ordering process,
             shopping has never been easier.
           </p>
         </div>
-        <div className="border px10 md:px-16 py-9 sm:py-20 flex flex-col gap-5">
+        <div className="border px-10 md:px-16 py-9 sm:py-20 flex flex-col gap-5">
           <b>Exceptional Customer Service:</b>
           <p className="text-gray-600">
             Our team of dedicated professionals is here to assist you the way,

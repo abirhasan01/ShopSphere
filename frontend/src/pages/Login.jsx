@@ -64,7 +64,7 @@ const Login = () => {
         ""
       ) : (
         <input
-          className="w-full px-3 py-2 border border-gray-800"
+          className="w-full px-5 py-2 border rounded-full border-gray-800"
           type="text"
           placeholder="Name"
           required
@@ -73,7 +73,7 @@ const Login = () => {
         />
       )}
       <input
-        className="w-full px-3 py-2 border border-gray-800"
+        className="w-full px-5 py-2 border rounded-full border-gray-800"
         type="email"
         placeholder="Email"
         required
@@ -81,7 +81,7 @@ const Login = () => {
         value={email}
       />
       <input
-        className="w-full px-3 py-2 border border-gray-800"
+        className="w-full px-5 py-2 border rounded-full border-gray-800"
         type="password"
         placeholder="Password"
         required
@@ -106,7 +106,7 @@ const Login = () => {
           </p>
         )}
       </div>
-      <button className="bg-black text-white font-ligh px-8 py-2 mb-4">
+      <button className="bg-black rounded-full cursor-pointer text-white font-ligh px-8 py-2 mb-4">
         {currentState === "Login" ? "Sign In" : "Sign Up"}
       </button>
     </form>
